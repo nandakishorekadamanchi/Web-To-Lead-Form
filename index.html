@@ -12,7 +12,7 @@
     <h1> Create Lead </h1>
     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5h000008N5cr" 
         method="POST"
-        onsubmit="submithandler()">
+        onsubmit="submithandler(event)">
     
     <input type=hidden 
            name='captcha_settings' 
@@ -91,15 +91,11 @@
     
     <label for="lead_date">Lead Date</label>  
     <input type="date" class="inputdate"/>       
-    <!-- Lead Date:<span class="dateInput dateOnlyInput">
-        <input  id="00N5h00000Ku0Ra" 
-                name="00N5h00000Ku0Ra"
-                size="12" 
-                type="text" /></span><br> -->
     
     <input type="submit" name="submit" class="submitMe">
 
     <div class="g-recaptcha" 
+         data-callback="captchasuccess"
          data-sitekey="6LebsoUpAAAAAAgj-4RgTmL6SGg6EINL7PC88PQB"></div><br>
     
     </form>
