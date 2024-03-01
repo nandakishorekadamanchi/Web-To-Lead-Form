@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+h1{
+    text-align: center;
+    margin-bottom: auto;
+}
+
+input,label{
+    display: block;
+}
+
+label{
+    color: green;
+}
+
+input{
+    width: 100%;
+}
+
+select{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.submitMe{
+    margin: 15px auto ;
+    width: 40%;
+    background-color: rgb(173, 195, 235);
+    border-color: rgb(33, 48, 76);
+    border-radius: 5px;
+}
+
+form{
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+    border: 2px solid black;
+    padding: 15px;
+}
+
+
+
+/* order of margin : 
+margin top right bottom left
+margin 25px 50px 75px 100Px
+margin 25px auto -> if you want the top margin to be 25px 
+and auto means the browser will take care of remaining right, bottom and left
+*/
